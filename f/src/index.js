@@ -6,8 +6,8 @@ import 'index.css';
 import App  from 'App';
 
 // setup fake backend
-// import { fakeBackend } from '_helpers';
-// fakeBackend();
+// import useFetchWrapper from './_helpers/fetch-wrapper';
+// useFetchWrapper();
 
 ReactDOM.render(
     <React.StrictMode>

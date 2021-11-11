@@ -4,8 +4,6 @@ import history from './history';
 import authAtom  from '../_state/auth';
 import useAlertActions from '../_actions/alert.actions';
 
-
-
 function useFetchWrapper() {
     const [auth, setAuth] = useRecoilState(authAtom);
     const alertActions = useAlertActions();
@@ -18,12 +16,16 @@ function useFetchWrapper() {
     };
 
     function request(method) {
-        return (url, body) => {
+            return (url, body) => {
             const requestOptions = {
                 method,
                 headers: authHeader(url)
-            };
-            if (body) {
+       
+     
+        
+    };console.log(url)
+    console.log(body)
+        if (body) {
                 requestOptions.headers['Content-Type'] = 'application/json';
                 requestOptions.body = JSON.stringify(body);
             }

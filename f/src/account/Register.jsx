@@ -6,8 +6,6 @@ import * as yup from 'yup';
 import useUserActions from '../_actions/user.actions';
 import useAlertActions from '../_actions/alert.actions';
 
-
-
 function Register({ history }) {
     const userActions = useUserActions();
     const alertActions = useAlertActions();
